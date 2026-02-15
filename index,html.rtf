@@ -1,0 +1,297 @@
+{\rtf1\ansi\ansicpg936\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+<meta charset="UTF-8">\
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">\
+<title>Vsvee - Handmade Premium Gifts</title>\
+<style>\
+* \{\
+  margin: 0;\
+  padding: 0;\
+  box-sizing: border-box;\
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;\
+\}\
+body \{\
+  background: #fdfdfd;\
+  color: #222;\
+  padding-bottom: 70px;\
+\}\
+.page \{ display: none; \}\
+.page.active \{ display: block; \}\
+\
+/* Header */\
+.header \{\
+  position: sticky;\
+  top: 0;\
+  background: #fff;\
+  padding: 16px 20px;\
+  display: flex;\
+  justify-content: space-between;\
+  align-items: center;\
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);\
+  z-index: 10;\
+\}\
+.logo \{\
+  font-weight: 700;\
+  font-size: 22px;\
+  color: #c97c5d;\
+\}\
+.search \{\
+  flex: 1;\
+  margin: 0 14px;\
+  background: #f6f6f6;\
+  border-radius: 24px;\
+  padding: 10px 16px;\
+  font-size: 14px;\
+  border: none;\
+  outline: none;\
+\}\
+\
+/* Banner */\
+.banner \{\
+  margin: 16px;\
+  background: linear-gradient(90deg, #f6e6d9, #f1d4c0);\
+  border-radius: 20px;\
+  padding: 28px 24px;\
+  color: #5a3c2a;\
+\}\
+.banner h2 \{\
+  font-size: 18px;\
+  margin-bottom: 8px;\
+  font-weight: 600;\
+\}\
+.banner p \{\
+  font-size: 14px;\
+  opacity: 0.8;\
+\}\
+\
+/* Category */\
+.cats \{\
+  display: flex;\
+  padding: 12px 16px;\
+  gap: 10px;\
+  overflow-x: auto;\
+\}\
+.cat \{\
+  white-space: nowrap;\
+  background: #fff;\
+  padding: 10px 18px;\
+  border-radius: 24px;\
+  font-size: 14px;\
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);\
+\}\
+\
+/* Products */\
+.goods \{\
+  display: grid;\
+  grid-template-columns: 1fr 1fr;\
+  gap: 16px;\
+  padding: 16px;\
+\}\
+.card \{\
+  background: #fff;\
+  border-radius: 18px;\
+  overflow: hidden;\
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);\
+  cursor: pointer;\
+\}\
+.card-img \{\
+  width: 100%;\
+  height: 160px;\
+  background: #f6f6f6;\
+  background-size: cover;\
+  background-position: center;\
+\}\
+.card-info \{ padding: 14px; \}\
+.card-title \{\
+  font-size: 14px;\
+  height: 36px;\
+  overflow: hidden;\
+  margin-bottom: 8px;\
+\}\
+.card-price \{\
+  font-weight: 600;\
+  color: #c97c5d;\
+  font-size: 16px;\
+\}\
+\
+/* Detail */\
+.detail-img \{\
+  width: 100%;\
+  height: 380px;\
+  background: #f6f6f6;\
+  background-size: cover;\
+  background-position: center;\
+\}\
+.detail-body \{\
+  padding: 28px 24px;\
+  background: #fff;\
+  border-radius: 24px 24px 0 0;\
+  margin-top: -24px;\
+  position: relative;\
+\}\
+.detail-title \{\
+  font-size: 20px;\
+  font-weight: 600;\
+  margin-bottom: 12px;\
+\}\
+.detail-price \{\
+  color: #c97c5d;\
+  font-size: 24px;\
+  font-weight: 700;\
+  margin-bottom: 16px;\
+\}\
+.detail-desc \{\
+  font-size: 15px;\
+  color: #666;\
+  line-height: 1.7;\
+  margin-bottom: 20px;\
+\}\
+\
+/* Form & Button */\
+.address \{\
+  width: 100%;\
+  padding: 14px;\
+  border: 1px solid #eee;\
+  border-radius: 12px;\
+  margin-bottom: 12px;\
+  outline: none;\
+\}\
+.buy-btn \{\
+  display: block;\
+  width: 100%;\
+  padding: 18px;\
+  border-radius: 16px;\
+  font-weight: 600;\
+  font-size: 16px;\
+  border: none;\
+  cursor: pointer;\
+  margin-bottom: 10px;\
+\}\
+.buy-now \{ background: #c97c5d; color: #fff; \}\
+.paypal \{ background: #ffc439; color: #000; \}\
+\
+/* Tabbar */\
+.tabbar \{\
+  position: fixed;\
+  bottom: 0;\
+  left: 0;\
+  right: 0;\
+  background: #fff;\
+  height: 70px;\
+  display: flex;\
+  align-items: center;\
+  border-top: 1px solid #f0f0f0;\
+  z-index: 9;\
+\}\
+.tab \{\
+  flex: 1;\
+  text-align: center;\
+  font-size: 12px;\
+  color: #777;\
+  cursor: pointer;\
+\}\
+.tab.active \{\
+  color: #c97c5d;\
+  font-weight: 600;\
+\}\
+\
+.cats::-webkit-scrollbar \{ height: 0; \}\
+</style>\
+</head>\
+<body>\
+\
+<!-- \uc0\u39318 \u39029  -->\
+<div id="home" class="page active">\
+  <div class="header">\
+    <div class="logo">Vsvee</div>\
+    <input class="search" placeholder="Search gifts...">\
+    <div onclick="go('cart')">\uc0\u55357 \u57042 </div>\
+  </div>\
+\
+  <div class="banner">\
+    <h2>Handmade & Premium Gifts</h2>\
+    <p>Unique gift for every precious moment.</p >\
+  </div>\
+\
+  <div class="cats">\
+    <div class="cat">All</div>\
+    <div class="cat">Crystal</div>\
+    <div class="cat">Jewelry</div>\
+    <div class="cat">Leather</div>\
+    <div class="cat">Gift Sets</div>\
+  </div>\
+\
+  <div class="goods">\
+    <div class="card" onclick="go('detail')">\
+      <div class="card-img" style="background-image:url('https://picsum.photos/seed/crystal/400/300')"></div>\
+      <div class="card-info">\
+        <div class="card-title">Natural Crystal Bracelet</div>\
+        <div class="card-price">$24.99</div>\
+      </div>\
+    </div>\
+    <div class="card">\
+      <div class="card-img" style="background-image:url('https://picsum.photos/seed/leather/400/300')"></div>\
+      <div class="card-info">\
+        <div class="card-title">Handmade Leather Bag</div>\
+        <div class="card-price">$39.99</div>\
+      </div>\
+    </div>\
+  </div>\
+</div>\
+\
+<!-- \uc0\u35814 \u24773 \u39029  -->\
+<div id="detail" class="page">\
+  <div class="detail-img" style="background-image:url('https://picsum.photos/seed/crystal/800/600')"></div>\
+  <div class="detail-body">\
+    <div class="detail-title">Natural Crystal Bracelet</div>\
+    <div class="detail-price">$24.99</div>\
+    <div class="detail-desc">\
+      Handmade natural stone bracelet. Perfect for gift, daily wear, anniversary, birthday.\
+    </div>\
+\
+    <input class="address" placeholder="Full name">\
+    <input class="address" placeholder="Shipping address">\
+    <input class="address" placeholder="Phone">\
+    <input class="address" placeholder="Email">\
+\
+    <button class="buy-btn paypal" onclick="pay()">Buy with PayPal</button>\
+    <button class="buy-btn buy-now" onclick="order()">Place Order</button>\
+  </div>\
+</div>\
+\
+<!-- \uc0\u36141 \u29289 \u36710  -->\
+<div id="cart" class="page">\
+  <div class="header"><div class="logo">Cart</div></div>\
+  <div style="text-align:center;padding:80px 20px;color:#999">Empty</div>\
+</div>\
+\
+<!-- \uc0\u24213 \u37096 \u23548 \u33322  -->\
+<div class="tabbar">\
+  <div class="tab active" onclick="go('home')">Home</div>\
+  <div class="tab" onclick="go('cart')">Cart</div>\
+  <div class="tab" onclick="go('user')">Profile</div>\
+</div>\
+\
+<script>\
+function go(page) \{\
+  document.querySelectorAll('.page').forEach(el => el.classList.remove('active'))\
+  document.getElementById(page).classList.add('active')\
+\}\
+function pay() \{\
+  window.open("https://www.paypal.com")\
+\}\
+function order() \{\
+  alert("Order submitted successfully")\
+  go('home')\
+\}\
+</script>\
+</body>\
+</html>}
